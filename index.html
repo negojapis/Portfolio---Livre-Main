@@ -1,46 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Mastim, criador digital focado em sites, sistemas, automações, IA e experiências digitais.">
+    <title>Mastim | Digital Creator & Automation Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Website</title>
 </head>
 
 <body>
+    <!-- HEADER & NAVIGATION -->
     <header>
-        <a href="#" class="logo">Mastim</a>
-
-        <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
+        <a href="#home" class="logo">Mastim</a>
+        
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#solucoes" class="nav-link">Soluções</a>
+            <a href="#stack" class="nav-link">Stack</a>
+            <a href="#processo" class="nav-link">Processo</a>
+            <a href="#contato" class="nav-link">Contato</a>
         </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-overlay" id="mobile-overlay">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#projetos" class="mobile-link">Projetos</a>
+            <a href="#solucoes" class="mobile-link">Soluções</a>
+            <a href="#stack" class="mobile-link">Stack</a>
+            <a href="#processo" class="mobile-link">Processo</a>
+            <a href="#contato" class="mobile-link">Contato</a>
+        </nav>
+    </div>
+
+    <!-- MAIN HOME / HERO SECTION -->
+    <section class="home" id="home">
+        <div class="home-img-container">
+            <div class="image-glow"></div>
+            <img src="main.jpg" alt="Mastim Portrait" class="home-img">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Mastim</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique
-                doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam
-                quaerat neque asperiores ea.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <h1 class="fade-up">Hi, I'm <span class="highlight-name">Mastim</span></h1>
+            <h2 class="sub-title fade-up-delay-1">Digital Creator • Code • AI • Automation</h2>
+            <h3 class="typing-container fade-up-delay-1">
+                Foco em <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+            </h3>
+            <p class="hero-desc fade-up-delay-2">
+                Crio sites, sistemas, automações e experiências digitais com foco em design, performance e inteligência artificial. Meu trabalho une estética, código e estratégia para transformar ideias em projetos reais.
+            </p>
+            
+            <div class="hero-tags fade-up-delay-2">
+                <span class="hero-tag">Web Design</span>
+                <span class="hero-tag">IA</span>
+                <span class="hero-tag">Automação</span>
+                <span class="hero-tag">Sistemas</span>
+                <span class="hero-tag">Branding Tech</span>
             </div>
-            <a href="#" class="btn">Hire me</a>
+
+            <div class="hero-buttons fade-up-delay-3">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+
+            <div class="social-icons fade-up-delay-3">
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </section>
+
+    <!-- HIGHLIGHTS BAR -->
+    <div class="highlights-bar">
+        <div class="highlights-track">
+            <span>Design</span><span class="dot"></span>
+            <span>Code</span><span class="dot"></span>
+            <span>Automation</span><span class="dot"></span>
+            <span>AI</span><span class="dot"></span>
+            <span>Design</span><span class="dot"></span>
+            <span>Code</span><span class="dot"></span>
+            <span>Automation</span><span class="dot"></span>
+            <span>AI</span><span class="dot"></span>
+            <span>Design</span><span class="dot"></span>
+            <span>Code</span><span class="dot"></span>
+            <span>Automation</span><span class="dot"></span>
+            <span>AI</span><span class="dot"></span>
+            <span>Design</span><span class="dot"></span>
+            <span>Code</span><span class="dot"></span>
+            <span>Automation</span><span class="dot"></span>
+            <span>AI</span>
+        </div>
+    </div>
+
+    <!-- SOLUTIONS SECTION -->
+    <section class="solucoes" id="solucoes">
+        <div class="section-header">
+            <h4 class="section-tag">O que faço</h4>
+            <h2 class="section-title">Soluções Inteligentes</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3 class="card-title">Sites & Landing Pages</h3>
+                <p class="card-desc">Páginas modernas, responsivas e focadas em presença digital, performance e conversão.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="card-title">Sistemas Web</h3>
+                <p class="card-desc">Painéis, dashboards, ferramentas internas e soluções sob medida para negócios.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                <h3 class="card-title">Automações</h3>
+                <p class="card-desc">Fluxos inteligentes para economizar tempo, reduzir processos manuais e conectar ferramentas.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                <h3 class="card-title">IA Aplicada</h3>
+                <p class="card-desc">Assistentes, chatbots, geração de conteúdo, análise e integrações com inteligência artificial.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+                <h3 class="card-title">Scripts & Otimização</h3>
+                <p class="card-desc">Soluções para Windows, manutenção, performance, produtividade e experiência gamer.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="solution-card">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3 class="card-title">Identidade Digital</h3>
+                <p class="card-desc">Direção visual, conteúdo, posicionamento e presença digital para marcas e projetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="projetos" id="projetos">
+        <div class="section-header">
+            <h4 class="section-tag">Portfólio</h4>
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img-placeholder p-gradient-1">
+                    <span>Grace Code Systems</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="p-tag">Sites</span>
+                        <span class="p-tag">Sistemas</span>
+                        <span class="p-tag">IA</span>
+                        <span class="p-tag">Automação</span>
+                    </div>
+                    <h3 class="project-title">Grace Code Systems</h3>
+                    <p class="project-desc">Empresa de soluções digitais focada em sites, sistemas, automações, IA aplicada e experiências digitais de alto nível.</p>
+                    <a href="#" class="project-btn">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img-placeholder p-gradient-2">
+                    <span>Mastim Help</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="p-tag">Windows</span>
+                        <span class="p-tag">Scripts</span>
+                        <span class="p-tag">Performance</span>
+                        <span class="p-tag">Gamer</span>
+                    </div>
+                    <h3 class="project-title">Mastim Help</h3>
+                    <p class="project-desc">Projeto de scripts e ferramentas para otimização, manutenção e performance de computadores.</p>
+                    <a href="#" class="project-btn">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img-placeholder p-gradient-3">
+                    <span>Divine Brew Co.</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="p-tag">Branding</span>
+                        <span class="p-tag">Site</span>
+                        <span class="p-tag">Identidade</span>
+                        <span class="p-tag">Conteúdo</span>
+                    </div>
+                    <h3 class="project-title">Divine Brew Co.</h3>
+                    <p class="project-desc">Marca autoral de café com identidade visual, conceito premium e presença digital.</p>
+                    <a href="#" class="project-btn">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img-placeholder p-gradient-4">
+                    <span>Óticas Joney</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="p-tag">Social Media</span>
+                        <span class="p-tag">Design</span>
+                        <span class="p-tag">Conteúdo</span>
+                        <span class="p-tag">Marca</span>
+                    </div>
+                    <h3 class="project-title">Óticas Joney</h3>
+                    <p class="project-desc">Gestão de conteúdo, presença digital e comunicação visual para redes sociais.</p>
+                    <a href="#" class="project-btn">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-img-placeholder p-gradient-5">
+                    <span>Mastimverse</span>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="p-tag">Comunidade</span>
+                        <span class="p-tag">Geek</span>
+                        <span class="p-tag">Discord</span>
+                        <span class="p-tag">Experiência</span>
+                    </div>
+                    <h3 class="project-title">Mastimverse</h3>
+                    <p class="project-desc">Comunidade geek/nerd com foco em experiência, interação, eventos e conexões reais.</p>
+                    <a href="#" class="project-btn">Ver detalhes <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STACK SECTION -->
+    <section class="stack" id="stack">
+        <div class="section-header">
+            <h4 class="section-tag">Tecnologias</h4>
+            <h2 class="section-title">Minha Stack</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="stack-container">
+            <div class="stack-chip">HTML</div>
+            <div class="stack-chip">CSS</div>
+            <div class="stack-chip">JavaScript</div>
+            <div class="stack-chip">TypeScript</div>
+            <div class="stack-chip">React</div>
+            <div class="stack-chip">Next.js</div>
+            <div class="stack-chip">Tailwind CSS</div>
+            <div class="stack-chip">Node.js</div>
+            <div class="stack-chip">Python</div>
+            <div class="stack-chip">Supabase</div>
+            <div class="stack-chip">Firebase</div>
+            <div class="stack-chip">APIs</div>
+            <div class="stack-chip">Framer Motion</div>
+            <div class="stack-chip">GSAP</div>
+            <div class="stack-chip">Vite</div>
+            <div class="stack-chip">GitHub</div>
+            <div class="stack-chip">Vercel</div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section class="processo" id="processo">
+        <div class="section-header">
+            <h4 class="section-tag">Metodologia</h4>
+            <h2 class="section-title">Como Eu Trabalho</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="timeline">
+            <!-- Step 1 -->
+            <div class="timeline-step">
+                <div class="step-num">01</div>
+                <h3 class="step-title">Diagnóstico</h3>
+                <p class="step-desc">Entendo o objetivo, público, problema e direção do projeto.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="timeline-step">
+                <div class="step-num">02</div>
+                <h3 class="step-title">Direção Visual</h3>
+                <p class="step-desc">Defino estética, identidade, experiência e estrutura visual.</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="timeline-step">
+                <div class="step-num">03</div>
+                <h3 class="step-title">Desenvolvimento</h3>
+                <p class="step-desc">Transformo a ideia em site, sistema, automação ou solução digital.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="timeline-step">
+                <div class="step-num">04</div>
+                <h3 class="step-title">Entrega</h3>
+                <p class="step-desc">Publicação, ajustes, responsividade, testes e suporte inicial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="sobre" id="sobre">
+        <div class="section-header">
+            <h4 class="section-tag">Sobre Mim</h4>
+            <h2 class="section-title">Criando o Amanhã</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="sobre-content">
+            <div class="sobre-text">
+                <p>Sou Mastim, criador digital focado em tecnologia, design e automação. Meu trabalho une estética visual, código e inteligência artificial para criar experiências digitais com identidade, performance e propósito.</p>
+            </div>
+            <div class="sobre-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                    <h4>Design com identidade</h4>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon"><i class="fa-solid fa-code"></i></span>
+                    <h4>Código limpo</h4>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon"><i class="fa-solid fa-bolt"></i></span>
+                    <h4>Automação inteligente</h4>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-icon"><i class="fa-solid fa-star"></i></span>
+                    <h4>Experiência premium</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contato" id="contato">
+        <div class="section-header">
+            <h4 class="section-tag">Contato</h4>
+            <h2 class="section-title">Vamos criar algo juntos?</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="contato-content">
+            <p class="contato-desc">Se você precisa de um site, sistema, automação ou presença digital mais profissional, fale comigo e vamos tirar sua ideia do papel.</p>
+            
+            <div class="contato-buttons">
+                <a href="https://wa.me/SEUNUMEROAQUI" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="#" class="contact-btn download">
+                    <i class="fa-solid fa-file-arrow-down"></i> Baixar Portfólio
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="contact-btn instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="contact-btn github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="mailto:exemplo@email.com" class="contact-btn email">
+                    <i class="fa-solid fa-envelope"></i> E-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-text">Mastim &copy; 2026 &mdash; Digital Creator &amp; Automation Developer.</p>
+        <p class="footer-subtext">Feito com design, código e visão.</p>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="main.js"></script>
 </body>
 
 </html>
