@@ -196,14 +196,7 @@ header.scrolled {
     margin-top: -80px;
 }
 
-.hero-logo-small {
-    position: absolute;
-    top: 50px;
-    left: 80px;
-    width: 80px;
-    height: auto;
-    z-index: 10;
-}
+
 
 .home-img-container {
     position: absolute;
@@ -228,7 +221,7 @@ header.scrolled {
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cursive-prefix {
@@ -377,13 +370,12 @@ header.scrolled {
     opacity: 0.85;
 }
 
-.highlights-track .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: var(--red);
-    box-shadow: 0 0 10px var(--red-strong);
-    margin: 0 10px;
+.highlights-track .ticker-logo {
+    width: 45px;
+    height: auto;
+    margin: 0 15px;
+    opacity: 0.9;
+    object-fit: contain;
 }
 
 @keyframes scroll-marquee {
@@ -1111,12 +1103,7 @@ footer {
         padding-top: 120px;
         padding-bottom: 0;
     }
-    
-    .hero-logo-small {
-        top: 20px;
-        left: 20px;
-        width: 50px;
-    }
+
     
     .home-content {
         align-items: center;
