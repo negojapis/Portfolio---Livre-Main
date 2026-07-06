@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. PREMIUM DISCREET TYPING ANIMATION
     const typedTextSpan = document.getElementById('typed-text');
-    const words = ["Code", "AI", "Automation", "Design"];
+    const words = ["Estética", "Skincare", "Autoestima", "Bem-estar"];
     const typingDelay = 100;
     const erasingDelay = 60;
     const newWordDelay = 2000; // Delay between words
@@ -104,4 +104,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', scrollSpy);
     scrollSpy(); // Initial check
+
+    // 5. GLOW CARD EFFECT
+    const glowCards = document.querySelectorAll('[data-glow]');
+    
+    const syncPointer = (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        glowCards.forEach(card => {
+            const rect = card.getBoundingClientRect();
+            const cardX = x - rect.left;
+            const cardY = y - rect.top;
+            
+            card.style.setProperty('--x', cardX.toFixed(2));
+            card.style.setProperty('--xp', (x / window.innerWidth).toFixed(2));
+            card.style.setProperty('--y', cardY.toFixed(2));
+            card.style.setProperty('--yp', (y / window.innerHeight).toFixed(2));
+        });
+    };
+
+    if (glowCards.length > 0) {
+        document.body.addEventListener('pointermove', syncPointer);
+    }
 });
