@@ -1,31 +1,40 @@
-# Mastim Portfolio
+# Márcia | Especialista em Estética Avançada
 
-Portfólio pessoal desenvolvido para apresentar projetos, soluções digitais, automações, sistemas e experiências visuais com alto nível de design e performance.
+Portfólio digital e landing page premium desenvolvida para apresentar os tratamentos e a jornada de beleza proporcionados pela especialista Márcia. O projeto foi construído com foco absoluto em **Experiência do Usuário (UX)** e **Design de Alto Padrão (Premium)**, distanciando-se de sites genéricos para criar uma verdadeira vitrine imersiva.
 
-## Status do Projeto
-- **Concluído**: Redesign completo da landing page transformando-a em um portfólio digital premium, contendo animações discretas, efeitos de glow nos cards, menu hambúrguer interativo no mobile, e total responsividade.
-- **Sincronizado**: Repositório Git local associado ao remote e branch principal `main` atualizada no GitHub.
+## Proposta e Diferenciais do Projeto
 
-## Objetivo
-Posicionar o profissional Mastim não apenas como um web designer convencional, mas como um **criador de experiências digitais com foco em design, código, inteligência artificial e automação**.
+O site não é apenas informativo; ele transmite autoridade, exclusividade e beleza desde os primeiros segundos de navegação.
+
+- **Design Estilo "Revista" (Editorial)**: Uso de sobreposição de tipografias (fontes cursivas elegantes como *Great Vibes* sobrepostas a fontes clássicas serifadas) que entregam um aspecto luxuoso e sofisticado.
+- **Imersão Visual**: A seção Hero apresenta uma imagem de fundo em tela cheia que se ajusta automaticamente, criando um impacto visual de "capa de revista".
+- **Micro-interações de Alto Nível**: 
+  - **Cursor Personalizado**: O ponteiro padrão do sistema foi substituído por uma bolinha e um anel externo fluido que responde a cliques e pairar (hover) em botões e links, dando uma sensação "tátil" e de aplicativo moderno.
+  - **Efeito Glow (Brilho Dinâmico)**: Os cards de tratamento possuem um efeito inteligente que rastreia a posição do mouse e ilumina a borda interna do card, transmitindo inovação e tecnologia.
+- **Marquee Contínuo (Esteira de Destaques)**: Uma barra horizontal com animação infinita exibindo palavras-chave (*Skincare*, *Glow*, *Beleza*, *Estética*) separadas pela logo da especialista, trazendo dinamismo ininterrupto.
+- **Animações de Scroll (Fade Up)**: O conteúdo não é carregado de uma vez. À medida que o usuário rola a página, elementos surgem flutuando suavemente de baixo para cima, o que cria um ritmo de leitura guiado e muito agradável.
+- **Responsividade Impecável**: Adaptação perfeita de todos os elementos para qualquer tela, com menus e layouts que não perdem a proporção e a elegância no celular.
 
 ## Tecnologias Utilizadas
-- **HTML5**: Estrutura semântica e otimizada para SEO básico.
-- **CSS3**: Estilização premium baseada em variáveis de design, grids/flexbox responsivos, animações sutilmente fluidas e efeito glassmorphic de blur no menu.
-- **JavaScript (Vanilla)**: Lógica interna para menu mobile hambúrguer, scroll spy (destaque de seção ativa), transição do cabeçalho ao rolar a página e digitação premium discreta na hero.
-- **Vite**: Ferramenta de build rápida e servidora de desenvolvimento local.
-- **Font Awesome**: Conjunto de ícones para links sociais e especialidades.
-- **Google Fonts**: Tipografias *Space Grotesk* (títulos tech-premium) e *Inter* (corpo de texto com ótima legibilidade).
 
-## Seções da Landing Page
-1. **Home (Hero)**: Introdução contendo subtítulo moderno com tags tech de especialidade, links sociais rápidos, botões principais de ação e animação de digitação cíclica.
-2. **Faixa de Destaques**: Divisor dinâmico em formato de marquee com palavras-chave: *Design, Code, Automation, AI*.
-3. **Soluções**: Grid com 6 cards cobrindo desenvolvimento de sites, dashboards/sistemas web, automações de fluxos de processos, inteligência artificial integrada, otimização/scripts Windows, e direção visual de marcas.
-4. **Projetos em Destaque**: Cards detalhados com tags, descrição e botão "Ver detalhes" para projetos como *Grace Code Systems*, *Mastim Help*, *Divine Brew Co.*, *Óticas Joney*, e *Mastimverse*.
-5. **Stack**: Chips com bordas de neon sutil detalhando as linguagens e bibliotecas fundamentais do profissional.
-6. **Processo**: Etapas da metodologia de trabalho horizontal (Diagnóstico, Direção Visual, Desenvolvimento, Entrega) com números destacados em vermelho.
-7. **Sobre**: Resumo conceitual sobre os ideais de criação do Mastim.
-8. **Contato**: Seção final de conversão com links rápidos e o WhatsApp preparado com placeholder `SEUNUMEROAQUI`.
+Para garantir **leveza e altíssima performance**, o projeto foi desenvolvido sem a dependência de frameworks ou bibliotecas pesadas para a interface, garantindo carregamento instantâneo e fluidez.
 
-## Autor
-- **Mastim** / **Grace Code Systems**
+- **HTML5**: Estruturação limpa e semântica de seções.
+- **CSS3 (Vanilla)**: Toda a inteligência visual, variáveis de cor, responsividade (Media Queries), animações de fade e keyframes (para a esteira contínua) criadas do zero utilizando CSS moderno.
+- **JavaScript (Vanilla JS)**: Responsável pela lógica das micro-interações:
+  - Funcionamento do menu mobile (hambúrguer).
+  - Cálculo matemático (eixos X e Y) para o efeito de Glow nos cards baseado na posição exata do mouse.
+  - Lógica de renderização do Cursor Personalizado e suas reações.
+  - `IntersectionObserver` para disparar as animações *Fade-Up* apenas quando os elementos entram no campo de visão.
+- **Vite**: Ferramenta de build e execução de desenvolvimento super rápida.
+- **Google Fonts**: Combinação selecionada de fontes premium (*Inter*, *Space Grotesk*, *Playfair Display*, *Cinzel* e *Great Vibes*).
+- **Font Awesome**: Conjunto de ícones vetoriais.
+
+## Estrutura do Site
+
+1. **Home (Hero)**: Tela inicial imersiva com tipografia impactante, fundo de tela cheia e menu fixo transparente.
+2. **Highlights Bar (Esteira)**: Destaque rotativo contínuo com a identidade visual da profissional.
+3. **Tratamentos**: Grid estilizado contendo cards modernos com as especialidades estéticas.
+4. **Jornada (Processo)**: Uma linha do tempo vertical detalhando o método exclusivo de atendimento, da avaliação ao acompanhamento.
+5. **Sobre**: História e manifesto da especialista, construído com tipografia editorial.
+6. **Contato**: Rodapé completo focado em conversão, com mapa do site e chamadas para o WhatsApp.
