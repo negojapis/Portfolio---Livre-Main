@@ -1108,32 +1108,42 @@ footer {
     .home-content {
         align-items: center;
         padding-left: 0;
+        margin-top: 0;
     }
     .home-img-container {
-        position: relative;
-        height: 50vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 100%;
-        order: 2; /* Imagem embaixo no mobile */
+        order: unset;
+        margin-top: 0;
+        display: block;
+        z-index: 0;
     }
     .hero-model-img {
+        max-height: none;
+        width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: 70% center;
         margin-right: 0;
-        object-position: top center;
     }
     .hero-title-group {
         align-items: center;
         margin-bottom: 0;
     }
     .cursive-prefix {
-        font-size: 5rem;
-        margin-bottom: -25px;
+        font-size: 4.5rem;
+        margin-bottom: -15px;
         margin-left: 0;
         transform: rotate(-5deg);
     }
     .serif-title {
-        font-size: 4.5rem;
-        letter-spacing: 3px;
+        font-size: 4rem;
+        letter-spacing: 2px;
         text-align: center;
+        line-height: 1;
     }
     .subtitle-group {
         flex-direction: column;
@@ -1199,7 +1209,8 @@ footer {
         font-size: 3.5rem;
     }
     .cursive-prefix {
-        font-size: 4rem;
+        font-size: 3.8rem;
+        margin-bottom: -10px;
     }
     .cursive-sub {
         font-size: 1.5rem;
@@ -1207,7 +1218,31 @@ footer {
     .serif-sub {
         font-size: 0.8rem;
     }
-    .home-img-container {
-        height: 40vh;
-    }
+    /* Removido max-height para permitir que a imagem preencha a tela */
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    margin-top: 50px;
+}
+
+.footer-subtext {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.footer-credits {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    opacity: 0.8;
+}
+
+.footer-credits strong {
+    color: var(--red-strong);
+    font-weight: 600;
 }
